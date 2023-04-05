@@ -42,13 +42,12 @@
   echo '<div class="img-weather"><img src='. $weather. '></div>';
  }
 
-
  $temp = array_slice($data, 3, true);
  echo '<h2>'.'°C '.$temp['main']['temp'].'</h2>';
+ echo '<h2>'.'Feels_like: °C '.$data['main']['feels_like'].'</h2>';
  echo '<h2>'.'wind speed: '.$data['wind']['speed'].' m/s'.'</h2>';
  echo '<h2>'.'weather: '.$data['weather']['0']['main'].'</h2>';
  echo '<h2>'.'description: '.$data['weather']['0']['description'].'</h2>';
-
 ?>
 
 <?php
