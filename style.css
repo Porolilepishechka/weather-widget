@@ -5,8 +5,7 @@
  }
 
 body{
-    background-color: rgb(243, 184, 163);
-    color: #211e1e;
+    background-image: url(forest-wallpaper.jpg);
 }
 
 .weather{
@@ -30,5 +29,3 @@ body{
     max-width: 60px;
     border-radius: 50%;
 }
-
-
