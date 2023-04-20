@@ -12,14 +12,14 @@
     'lang' => 'en',
  );
 
- $ch = curl_init();
- curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
- curl_setopt($ch, CURLOPT_URL, $url.'?'.http_build_query($options));
+ $ci = curl_init();
+ curl_setopt($ci, CURLOPT_RETURNTRANSFER, 1);
+ curl_setopt($ci, CURLOPT_URL, $url.'?'.http_build_query($options));
 
- $response = curl_exec($ch);
+ $response = curl_exec($ci);
  $data = json_decode($response, true);
 
- curl_close($ch);
+ curl_close($ci);
 
  if($data['weather']['0']['main'] == 'Clouds'){
   $weather = "weather-clouds.jpg";
